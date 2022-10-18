@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>DREAM STORE-CART</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" width="125px" ></a>
+				</div>
+
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+					
+				</nav>
+				<a href="cart.html" target="_blank"><img src="images/cart.png" width="30px" height="30px"></a>
+			     <img src="images/menu.png"  class="menu-icon" onclick="menutoggle()">
+
+
+			</div>
+		</div>
+	</div>
+
+<br>
+
+<!-------------- cart item details----------->
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-1.jpg"> 
+                            <div>
+                               <p>Red Printed Tshirt</p>
+                               <small> Price :Rs.950/- </small>   
+                               <br/>
+                               <a href="">Remove</a>
+                            </div>
+                    </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.950/-</td>
+        </tr>
+
+        <tr>
+            <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-2.jpg"> 
+                            <div>
+                               <p>Black Sports Shoes</p>
+                               <small> Price :Rs.3500/-</small>   
+                               <br/>
+                               <a href="">Remove</a>
+                            </div>
+                    </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.3500/-</td>
+        </tr>
+
+        <tr>
+            <td>
+                    <div class="cart-info">
+                        <img src="./images/buy-3.jpg"> 
+                            <div>
+                               <p>Ash Bottom</p>
+                               <small> Price :Rs.1300/-</small>   
+                               <br/>
+                               <a href="">Remove</a>
+                            </div>
+                    </div>
+            </td>
+            <td><input type="number" value="2"></td>
+            <td>Rs.1300/-</td>
+        </tr>
+
+</table>
+
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtoatal</td>
+                <td>Rs.7050/-</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs.150/-</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>RS.7200/-</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-----------------------------------  footer ---------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our Apps</h3>
+                <p>Download App for Android and ios mobile phones</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/" target="_blank"><img src="images/play-store.png" ></a>
+                    <a href="https://www.apple.com/lae/app-store/" target="_blank"><img src="images/app-store.png" ></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="images/logo-white.png" alt=""></a>
+                <p>Our Purpose Is to Sustainably Make the pleasure and Benefits of Sports Accessible to the Many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <a href="index.html"><li>Coupons</li></a>
+                    <a href="index.html"><li>Blog Post</li></a>
+                    <a href="index.html"><li>Return Policy</li></a>
+                    <a href="index.html"><li>Join Affiliate</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                     <a href="https://www.fb.com/" target="_blank"><li>Facebook</li></a>
+                    <a href="https://www.twitter.com/" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li>Instagrams</li></a>
+                    <a href="https://www.youtube.com/" target="_blank"><li>YouTube</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            <a href="http://esn.ac.lk/" target="_blank">Copyright EUSL 2020 - Group project -Group No 4 -Online Shopping Site 
+        </p>
+    </div>
+</div>
+
+<!-------------- js menu -------------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight="0px";
+    
+    function menutoggle(){
+       
+        if(MenuItems.style.maxHeight == "0px"){
+            
+             MenuItems.style.maxHeight="200px";
+            
+        }
+        else{
+            
+             MenuItems.style.maxHeight="0px";
+        }
+    }
+    
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
